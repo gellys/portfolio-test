@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/main.css">
+        <title>My portfolio</title>
+    </head>
+    <body>
+        <!-- Menu Lateral -->
+        <aside>
+            <figure>
+                <div id="avatar"></div> 
+                <figcaption>Angelly Nascimento</figcaption>  
+            </figure>
+            <img src="images/menu.svg">
+            <!-- Menu de navegação -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Conteudo Principal -->
+        <main>
+            <h1>I'm a Web Developer and curious by the universe of technology.</h1>
+            <p>insert a description here</p>
+
+            <a href="#portfolio" class="cta">My portfolio</a>
+
+            <!-- About Section 
+            <section id="about" class="about-section">
+                    <h1>About Section</h1>
+            </section>
+            -->
+        </main>
+
+        <script>
+
+            (function(){
+                var menu = document.querySelector('ul'),
+                    menulink = document.querySelector('img');
+
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+        </script>
+    </body>
+</html>
